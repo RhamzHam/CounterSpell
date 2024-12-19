@@ -16,7 +16,7 @@ function Create(props) {
     function handleSubmit(e){
         e.preventDefault()
         props.setTrigger(false)
-        axios.post('/add_subtask', values)
+        axios.post('http://localhost:3000/add_subtask', values)
         .then((res) => {
             console.log(res)
         })

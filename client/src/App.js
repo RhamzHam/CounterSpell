@@ -4,36 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Navbar from "./components/Navbar.tsx";
 import Sidebar from "./components/Sidebar.tsx";
-import Table from "./components/Table.tsx";
+import Table from "./components/Table.jsx";
 
 function App() {
-  let heading = ["Subtask", "Ritual", "Priority", "State", "Start", "Due"];
-  let items = [
-    {
-      name: "Collect 5 Bramblesnout",
-      ritual: "Summon Kranklemaw",
-      priority: 3,
-      state: 3,
-      start: "Night of the Bloodcresent",
-      end: "On the Morrow",
-    },
-    {
-      name: "Collect 7 Yawberries",
-      ritual: "Curse of Rot",
-      priority: 2,
-      state: 4,
-      start: "Sumpter Eve",
-      end: "Come Brightlight",
-    },
-    {
-      name: "Draw Krat Circles",
-      ritual: "Summon Kranklemaw",
-      priority: 3,
-      state: 2,
-      start: "Night of the Bloodcresent",
-      end: "On the Morrow",
-    },
-  ];
   return (
     <div className="bg-dark">
       <Navbar />
@@ -43,7 +16,7 @@ function App() {
             <Sidebar />
           </div>
           <div className="col py-3">
-            <Table items={items} heading={heading} />
+            <Table />
           </div>
         </div>
       </div>
